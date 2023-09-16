@@ -4,12 +4,13 @@ font-family: 'Poppins', sans-serif;
 font-family: 'PT Serif', serif; */
 
 body {
-    margin: 110px 245px 24px 227px;
+    margin: 71px 0 38px 12px;
 }
 
 .welcome {
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .tit {
@@ -18,14 +19,14 @@ body {
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -0.045em;
-    text-align: left;
+    text-align: left;   
     width: 278px;
-    margin: 0;
-    color: #000000;
+    margin: 0 0 0 10px;
+    
 }
 
 .first-cont {
-    width: 439px;
+    width: 333px;
     font-family: 'Poppins';
     font-size: 18px;
     line-height: 27px;
@@ -34,50 +35,76 @@ body {
     
 }
 
-
-.who {
-    font-weight: 600;  
-    margin: 0 0 10px 0;
-}
-
 p{
     font-weight: 400;
 }
 
+.who {
+    font-weight: 600;  
+    margin: 38px 0 10px 10px;
+}
+
+
 .text {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    margin: 0;
+    margin: 0 0 0 10px;
 
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;    
-    
-    
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-top: 24px;     
 }
+
 .grid-item {
-    Width: 250px;
-    Height: 383px;
-    position: relative ;
-    margin-top: 85px;
+    Width: 156px;
+    Height: 100%;
+    position: relative;
 }
+
 .grid-item-2 {
-    Width: 250px;
-    Height: 383px;
+    Width: 156px;
+    Height: 100%;
     position: relative ;
-    margin-top: 180px;
+    margin-top: 86px;
+    
+}
+.grid-item-3 {
+    Width: 156px;
+    Height: 100%;
+    position: relative ;
+}
+
+.grid-item-4 {
+    Width: 156px;
+    Height: 100%;
+    position: relative ;
+    margin-top: 64px;
+}
+
+.grid-item-5 {
+    Width: 156px;
+    Height: 100%;
+    position: relative ;
+}
+
+.grid-item-6 {
+    Width: 156px;
+    Height: 100%;
+    position: relative ;
+    margin-top: 64px;
 }
 
 img {
-    Width: 227px;
-    Height: 325px
+    width: 138.72px;
+    height: 209px
 }
 
 .career {
@@ -106,6 +133,7 @@ img {
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 10px 0 0 0;
 
 }
 
@@ -121,6 +149,7 @@ footer {
     margin:  100px 0 24px 0;
     
     color: #BDBDBD;
+
 }
 
 a {
@@ -132,4 +161,163 @@ a {
 
 }
 
+/*VISTA MOVIL */
+
+@media (min-width: 768px){
+    body {
+        margin: 110px 245px 24px 227px;
+    }
+    
+    .welcome {
+        flex-direction: row; 
+    }
+    
+    .tit {
+        font-family: 'PT Serif', serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.045em;
+        text-align: left;
+        width: 278px;
+        margin: 0;
+        color: #000000;
+    }
+    
+    .first-cont {
+        width: 439px;
+        font-family: 'Poppins';
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        
+    }
+    
+    
+    .who {
+        font-weight: 600;  
+        margin: 0 0 10px 0;
+    }
+    
+    p{
+        font-weight: 400;
+    }
+    
+    .text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+    
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;    
+        
+        
+    }
+    .grid-item {
+        Width: 250px;
+        Height: 383px;
+        position: relative ;
+        margin-top: 85px;
+    }
+    .grid-item-2 {
+        Width: 250px;
+        Height: 383px;
+        position: relative ;
+        margin-top: 180px;
+    }
+
+    .grid-item-3 {
+        Width: 250px;
+        Height: 383px;
+        position: relative ;
+        margin-top: 85px;
+    }
+
+    .grid-item-4 {
+        Width: 250px;
+        Height: 383px;
+        position: relative ;
+        margin-top: 85px;
+    }
+
+    .grid-item-5 {
+        Width: 250px;
+        Height: 383px;
+        position: relative ;
+        margin-top: 180px;
+    }
+
+    .grid-item-6 {
+        Width: 250px;
+        Height: 383px;
+        position: relative ;
+        margin-top: 85px;
+    }
+    
+    img {
+        Width: 227px;
+        Height: 325px
+    }
+    
+    .career {
+        position: absolute ;
+        right: -44px;
+        top: 42px;
+        transform: rotate(90deg);
+        margin: 0;
+        width: 102px;
+        height: 16px; 
+    
+        font-family: 'PT Serif';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+    
+    }
+    
+    .name {
+        font-family: 'Poppins';
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+    
+    }
+    
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: center;
+        margin:  100px 0 24px 0;
+        
+        color: #BDBDBD;
+    }
+    
+    a {
+        color: #BDBDBD;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 5px ;
+    
+    }
+}
 
